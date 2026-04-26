@@ -34,6 +34,7 @@ cd MRS_Spring2026_Tutorial-MT01
 | 7 | [`07_langgraph_agent.ipynb`](07_langgraph_agent.ipynb) | The same agent rebuilt in LangGraph: state, conditional edges, persistence, streaming | 20 min |
 | 8 | [`08_openalex_papers.ipynb`](08_openalex_papers.ipynb) | Fetch real scientific papers via the OpenAlex API (no key needed); build a literature-search tool an agent can call | 15 min |
 | 9 | [`09_manim_animations.ipynb`](09_manim_animations.ipynb) | Generate scientifically-accurate Manim animations from English prompts: Bragg's law, Ewald sphere, BaTiO3 phase transition, Ostwald ripening | 15 min |
+| 10 | [`10_slack_bot.ipynb`](10_slack_bot.ipynb) | Build a Slack bot powered by Claude — DMs, threading, per-user memory, tool use (literature search via OpenAlex) | 20 min |
 
 **Total runtime end-to-end:** ~2 hours of audience work.
 
@@ -131,6 +132,14 @@ Ewald sphere, BaTiO3 cubic→tetragonal phase transition with peak splitting,
 Ostwald ripening with LSW dynamics) generated from short English prompts.
 MP4s are pre-rendered and bundled in `manim_demos/videos/`; the source
 scenes are in `manim_demos/`. Re-rendering needs Manim + LaTeX + ffmpeg.
+
+**10. Slack bot** — Wraps Claude as a Slack bot using `slack-bolt` in
+Socket Mode (no public URL needed). Three runnable bots in
+`slack_bot_examples/` at increasing complexity: echo, Claude with per-user
+memory + threading, and a tool-use bot that searches OpenAlex on demand.
+Includes the full Slack-app setup walkthrough so the audience can be
+running their own bot in 15 minutes. Reference architecture borrowed from
+the production system in <https://github.com/yijiang1/MIC_Data_Analysis_FAQ>.
 
 ---
 
