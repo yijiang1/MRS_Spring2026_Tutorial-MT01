@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local Claude Code state (personal subagents, sessions, settings)
+.claude/*
+# But DO commit shared project skills if any get added later
+!.claude/skills/
+
+# NFS leftovers from open file handles
+.nfs*
+
+# Secrets
+.env
+.env.*
+*.key
+
+# Generated figures / scratch
+*.tmp
+scratch/
+
+# Generator scripts (kept locally for regeneration; not part of the public tutorial)
+generators/
