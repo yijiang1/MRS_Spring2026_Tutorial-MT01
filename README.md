@@ -33,6 +33,7 @@ cd MRS_Spring2026_Tutorial-MT01
 | 6 | [`06_multi_agent_eval_caching.ipynb`](06_multi_agent_eval_caching.ipynb) | Planner + specialist sub-agents, eval harness with traces, prompt caching cost demo | 20 min |
 | 7 | [`07_langgraph_agent.ipynb`](07_langgraph_agent.ipynb) | The same agent rebuilt in LangGraph: state, conditional edges, persistence, streaming | 20 min |
 | 8 | [`08_openalex_papers.ipynb`](08_openalex_papers.ipynb) | Fetch real scientific papers via the OpenAlex API (no key needed); build a literature-search tool an agent can call | 15 min |
+| 9 | [`09_manim_animations.ipynb`](09_manim_animations.ipynb) | Generate scientifically-accurate Manim animations from English prompts: Bragg's law, Ewald sphere, BaTiO3 phase transition, Ostwald ripening | 15 min |
 
 **Total runtime end-to-end:** ~2 hours of audience work.
 
@@ -123,6 +124,13 @@ search, the inverted-index abstract gotcha, cursor pagination, the polite
 pool convention, and wraps the search as a Claude tool so an agent can find
 and summarise papers on its own. Pairs well with notebook 03 (RAG): use the
 output of #8 as the corpus for #3.
+
+**9. AI + Manim** — Demonstrates LLM-as-code-generator for *visual
+explanation*: four scientifically-accurate Manim animations (Bragg's law,
+Ewald sphere, BaTiO3 cubic→tetragonal phase transition with peak splitting,
+Ostwald ripening with LSW dynamics) generated from short English prompts.
+MP4s are pre-rendered and bundled in `manim_demos/videos/`; the source
+scenes are in `manim_demos/`. Re-rendering needs Manim + LaTeX + ffmpeg.
 
 ---
 
