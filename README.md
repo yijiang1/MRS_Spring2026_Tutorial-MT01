@@ -32,6 +32,7 @@ cd MRS_Spring2026_Tutorial-MT01
 | 5 | [`05_mcp_server.ipynb`](05_mcp_server.ipynb) | Build an MCP server, connect via stdio, drive it from a Claude agent | 15 min |
 | 6 | [`06_multi_agent_eval_caching.ipynb`](06_multi_agent_eval_caching.ipynb) | Planner + specialist sub-agents, eval harness with traces, prompt caching cost demo | 20 min |
 | 7 | [`07_langgraph_agent.ipynb`](07_langgraph_agent.ipynb) | The same agent rebuilt in LangGraph: state, conditional edges, persistence, streaming | 20 min |
+| 8 | [`08_openalex_papers.ipynb`](08_openalex_papers.ipynb) | Fetch real scientific papers via the OpenAlex API (no key needed); build a literature-search tool an agent can call | 15 min |
 
 **Total runtime end-to-end:** ~2 hours of audience work.
 
@@ -115,6 +116,13 @@ powers Claude Desktop, Claude Code, and Cursor's tool integrations. *The
 **7. LangGraph** — The same agent from #4, rebuilt as a `StateGraph` with
 `ToolNode`, `tools_condition`, and `MemorySaver`. Adds free conversation
 persistence keyed by `thread_id`, plus a custom safety-check branch.
+
+**8. OpenAlex** — Fetches real, current scientific papers from the OpenAlex
+free public API (no key required). Covers DOI lookup, keyword and concept
+search, the inverted-index abstract gotcha, cursor pagination, the polite
+pool convention, and wraps the search as a Claude tool so an agent can find
+and summarise papers on its own. Pairs well with notebook 03 (RAG): use the
+output of #8 as the corpus for #3.
 
 ---
 
